@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekana Technology</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+    <style>
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', ;
+        }
+
+
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        .logo {
+            height: 60px;
+            min-width: auto;
+            background-image: url('ekanalogo.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+
+        }
+
+
+        ul li a:hover {
+            color: red !important;
+        }
+
+        .outer1 {
+            min-height: 600px;
+            background: #0c328e;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+
+        .form {
+            min-height: 500px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .logo2 {
+            height: 250px;
+            /* max-width: 500px; */
+            padding: 30px;
+        }
+
+        .img1 {
+            height: 200px;
+            width: 150px;
+            background-image: url('apple pic.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            float: left;
+            margin-left: 300px;
+            /* animation-name: abc; */
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation: bounce 1s infinite;
+            /* Bounce animation for 1 second, infinitely */
+            transform: translateY(0);
+            /* Initial position */
+
+        }
+
+        .txt {
+            text-align: justify;
+        }
+
+        .txt1 {
+            text-align: center;
+        }
+
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+                /* Move up */
+            }
+
+
+            100% {
+                transform: translateY(0);
+                /* Move back down */
+            }
+        }
+
+        .img2 {
+            height: 200px;
+            width: 150px;
+            background-image: url('man-logo.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            float: right;
+            /* animation-name: def; */
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation: bounce 2s infinite;
+            /* Slower bounce animation */
+
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+                /* Move up */
+            }
+
+            100% {
+                transform: translateY(0);
+                /* Move back down */
+            }
+        }
+
+        .box1 {
+            height: 300px;
+            margin: 15px;
+            border-radius: 10px;
+            float: left;
+            transition: 2s;
+            background: rgb(249, 152, 168);
+        }
+
+        .box1:hover {
+            background: red;
+            transition: 1s;
+            transform: scale(1.1);
+
+        }
+
+        .box2 {
+            height: 300px;
+            margin: 15px;
+            border-radius: 10px;
+            float: left;
+            transition: 2s;
+            background: rgb(249, 152, 168);
+
+        }
+
+        .box2:hover {
+            background: red;
+            transition: 1s;
+            transform: scale(1.1);
+
+        }
+
+        .box3 {
+            height: 300px;
+            margin: 15px;
+            border-radius: 10px;
+            float: left;
+            transition: 2s;
+            background: rgb(249, 152, 168);
+        }
+
+        .box3:hover {
+            background: red;
+            transition: 1s;
+            transform: scale(1.1);
+
+
+        }
+
+        .ekana {
+            background-image: url('ekana_tech pic.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 500px;
+            width: 100%;
+
+            /* float: left; */
+
+        }
+
+        .box4 {
+            width: 100%;
+            float: left;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 60px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* our services */
+        .service-box {
+            background: black;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-box:hover {
+            background: red;
+            transform: scale(.9);
+        }
+
+        .text-light h3 {
+            color: white;
+        }
+
+        /* experience */
+         .experience-section {
+            /* background-color: #6c757d; */
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .counter-box {
+            background: black;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .counter-box:hover {
+            background: red;
+            transform: scale(.9);
+        }
+
+
+        /* start footer */
+        button a {
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        button:hover {
+            background: white;
+            color: red !important;
+
+        }
+
+
+        /* .footer1 
+        {
+            text-align: center;
+      
+    box-sizing: border-box;
+ 
+    color: #fff;
+    font-family: Montserrat,sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+
+        } */
+
+        .img3 {
+            min-height: 200px;
+            width: 150px;
+            background-image: url('man-logo.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            float: right;
+            /* padding: 20px; */
+            position: relative;
+        }
+
+        .footer2 {
+            float: left;
+            color: white;
+            text-align: center;
+            display: block;
+            color: rgb(176, 173, 173);
+
+
+            ul li a {
+                text-decoration: none;
+                color: rgb(199, 195, 195);
+            }
+
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light">
+    <div class="container-fluid">
+        <!-- logo -->
+        <div class="row">
+
+            <div class="col-md-2 bg-light logo"></div>
+
+            <!-- start nav  -->
+            <div class="col-sm-3"></div>
+            <div class="col-sm-7  fw-bold">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light fw-bold ">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-disabled="true">Technologies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Portfollo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Industrial Teanning</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <!-- end container -->
+    </div>
+    <!-- start body -->
+    <div class="container-fluid">
+        <div class="row outer1">
+            <div class=col-sm-1></div>
+            <div class="col-sm-5 mt-5 ">
+                <div class="logo2">
+                    <div class="img1 m-3"></div>
+                    <div class="img2 m-3"></div>
+                </div>
+                <!-- start ideas -->
+
+                <div class="col-sm-8 text-light fs-3 m-1 pt-5 ps-5">
+                    <h5>Ekana Technology</h5>
+                    <h2>WE ARE HERE TO MAKE </br> YOUR IDEA'S</h2>
+                    <button type="submit" class="btn btn-danger">Know More</button>
+
+                </div>
+            </div>
+            <!-- end ideas -->
+
+
+            <div class="col-sm-5 " id="contact">
+                <!-- start form -->
+                <form method="get" class="form p-2  bg-light ">
+
+                    <div class="row ">
+                        <div class="col-sm-12 mt-4 " style="text-align: center; ">
+                            <h1 style="font-size: 25px !important; color:#4073e8">Looking for a project development</h1>
+                            <br>
+                            <p class="" style="font-size: 12px !important;">Please fill the form below to Contact Us</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-2">
+                        <input type="text" placeholder="First Name" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" name="Fname">
+                    </div>
+
+                    <div class="mb-2">
+                        <input type="text" placeholder="Last Name" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" name="Lname">
+                    </div>
+
+                    <div class=" mb-2">
+                        <input type="email" placeholder="Your Email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" name="username">
+                    </div>
+
+                    <div class="mb-2">
+                        <input type="text" placeholder="Phone Number" class="form-control" id="number" name="number">
+                    </div>
+
+                    <!--select list  -->
+                    <div class="mb-2">
+                        <select class="form-select">
+                            <option selected>Select this question</option>
+                            <option>App Developer</option>
+                            <option>Web Developer</option>
+                            <option>Android Developer</option>
+                            <option>Bussiness Stratagies</option>
+                        </select>
+                    </div>
+                    <div class="mb-2">
+                        <textarea class="form-control" placeholder="I Have Question"></textarea>
+                    </div>
+
+
+                    <center> <button type="submit" class="btn btn-danger form-control mt-2 btn-lg "
+                            style="width:120px;">Submit</button></center>
+                    <!-- end form -->
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- start outer2 -->
+    <div class="container-fluid ">
+        <div class="row  fs-4 mt-4" style="text-align: center; font-size: 25px!important;">
+            <div class="col sm-12 fw-bold ">Best Digital Marketing Company In Lucknow</div>
+            <div class="col-sm-12 fw-bold">What We Do?</div>
+            <div class="col-sm-12 fw-bold">Effective solution for every businesses</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 p-5 fs-5 txt">
+                <p>Ekana technologies is not j ust Best Software Development or Best Web development company in Lucknow,
+                    we
+                    are a Best digital agency that believes in innovative, quality delivery within the time with Brand
+                    Development. We just focus only on Research, Innovation, and Customization and we always focus on
+                    performance by following these three keynotes. We understand the actual requirement and expectation
+                    of
+                    business and our motive is to deliver the real value for the money within the time by filling the
+                    needs
+                    of clients. We have a dedicated team for each segment of the web development and designing. Ekana
+                    Technologies having a team of those people who follow best web designing and best development as a
+                    passion. Ekana Technologies offers all kinds of best custom web development, best eCommerce
+                    Development,
+                    best WordPress development, best WordPress fixing, best mobile app development, and best digital
+                    marketing services for individuals and small to large scale companies. We always sharp our skills by
+                    learning the latest and trending technologies & methodologies. Be a prominent part of the web
+                    development industry, our objective is to deliver the high-end solution with high performance and an
+                    extreme level of security. </p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <!-- success story -->
+    <div class="col-sm-12 text-center fw-bold fs-2">
+        <p>We turn your vision into a success story</p>
+    </div>
+
+
+    <!--   start ideas -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5  p-5">
+                <div class="col-sm-4  mb-2 ">
+                    <h5 class="fw-bold">Fresh Ideas</h5>
+                </div>
+                <div class="col-sm-12 ">Our capability is in providing innovative tech solutions for business thoughts
+                    according to your perception. Starting from a flexible and convenient layout to the multipurpose
+                    settlement of structures, we have an enhanced accumulation of designs that accommodate your creative
+                    endeavors.</div>
+
+                <div class="col-sm-6  mt-2 ">
+                    <h5 class="fw-bold">Unique Designs</h5>
+                </div>
+                <div class="col-sm-12 mb-2">Our design structure supports the key methodology of the people in business
+                    by featuring the knowledge and motivation of the plan to accomplish special desires and objectives.
+                </div>
+
+                <div class="col-sm-9  mb-2 ">
+                    <h5 class="fw-bold">Organized Implementation</h5>
+                </div>
+                <div class="col-sm-12 mb-2">Organized Implementation is the most conspicuous procedure of incorporating
+                    a recently developed technically specialized software solution for a business where the standardized
+                    MVC format is followed which intensely relies upon the architecture of the solution. Our methodology
+                    is to make the created programming software adaptable, bug-free and smooth so that it supports all
+                    the platforms.</div>
+
+                <div class="col-sm-9 mb-2 ">
+                    <h5 class="fw-bold">Target-Oriented Solution</h5>
+                </div>
+                <div class="col-sm-12 ">Our aim is to design and develop best software solutions according to the set of
+                    objectives you follow in your business. As a software development company, our entire focus is on
+                    deploying best software solutions that resemble the business approach.</div>
+            </div>
+
+            <div class="col-sm-6  ekana  mt-5"></div>
+        </div>
+        <!-- end idea -->
+    </div>
+
+
+    <!--  ekana technology -->
+    <div class="col-sm-12 fw-bold  mt-2 text-center fs-1">Why Ekana Technologies?</div>
+    <div class="container-fluid">
+        <div class="row p-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10  txt ">We study, practice, develop, and continuously sharp ourselves on all of the
+                latest technologies to stay up to date. Also, we have some smart people who have years of experience in
+                the field of web development and they love what they do. Ekana Technologies is the best Website
+                development company that specializes in web design and custom web development, application development
+                and digital marketing. Ekana Technologies is a well-known IT company with experience in web development,
+                custom web development, android application development, WordPress Development, Laravel Development,
+                Magento development, and digital marketing. We have a wide list of globally satisfied client list for
+                our quality and smart work. We provide our services for web development full time, part-time or as per
+                your requirement. Being the best Web Development Company, we are experts in developing a simple single
+                static page or complex web application or any kind of eCommerce Development. We are also expert in
+                content management systems (CMS) like WordPress, Magento, Joomla, Open-cart, etc.</div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+    <!-- Our Services -->
+    <div class="container-fluid ">
+        <h2 class="fw-bold text-center mb-4 fs-1">Our Services</h2>
+        <div class="row justify-content-center">
+            <div class="col-sm-7 justify-content-center">
+                <p class="text-center">We provide custom software development solutions to make your organization more
+                    capable
+                    to compete in this digital world. Ekana Technologies is a leading software development company based
+                    in
+                    Lucknow, India. We design and develop easy-to-use custom software that maps to your business
+                    processes.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center text-light">
+            <div class="col-md-4 mb-4">
+                <div class="service-box">
+                    <i class="bi bi-code-square fs-1"></i>
+                    <h3>Software Development</h3>
+                    <p>A robust, dynamic, and proven method to offer software development solutions for small to
+                        large-scale businesses.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-box">
+                    <i class="bi bi-globe fs-1"></i>
+                    <h3>Web Development</h3>
+                    <p>Cutting-edge web solutions tailored to your business needs, ensuring efficiency and scalability.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-box">
+                    <i class="bi bi-phone-vibrate fs-1"></i>
+                    <h3>Mobile App Development</h3>
+                    <p>Innovative mobile applications designed for both Android and iOS to enhance user engagement.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center text-light">
+            <div class="col-md-4 mb-4">
+                <div class="service-box">
+                    <i class="bi bi-laptop fs-1"></i>
+                    <h3>Design Services</h3>
+                    <p>Creative and aesthetically appealing designs that enhance brand identity and user experience.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-box">
+                    <i class="bi bi-file-word-fill fs-1"></i>
+                    <h3>WordPress Development</h3>
+                    <p>Custom WordPress solutions designed to optimize content management and site performance.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-box">
+                    <i class="bi bi-person-bounding-box fs-1"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Strategic digital marketing solutions to improve brand visibility and audience engagement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- start Experienced -->
+    <div class="container mt-5">
+        <div class="row justify-content-center mb-3">
+            <div class="col-md-12 experience-section">
+                <h2 class="fw-bold text-dark fs-1">We Are Experienced & Experts</h2>
+                <div class="row mt-4">
+                    <div class="col-md-3 mb-3">
+                        <div class="counter-box">
+                            <span class="counter" data-target="2000">0</span><sup>+</sup><br>
+                            Project Successful
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="counter-box">
+                            <span class="counter" data-target="10">0</span><sup>+</sup><br>
+                            Expert Consultants
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="counter-box">
+                            <span class="counter" data-target="25">0</span><sup>+</sup><br>
+                            Team Members
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="counter-box">
+                            <span class="counter" data-target="5">0</span><sup>+</sup><br>
+                            Branches
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.counter').each(function () {
+                var $this = $(this),
+                    target = $this.attr('data-target');
+
+                $({ countNum: 0 }).animate(
+                    { countNum: target },
+                    {
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum);
+                        }
+                    }
+                );
+            });
+        });
+    </script>
+
+
+
+
+    <!-- start footer1 -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- <div class="col-sm-12"> -->
+            <div class="col-sm-3 bg-danger text-light ">
+                <p class="mt-2">READY TO LAUNCH YOUR IDEA!</p>
+                <h1 class="fs-1 fw-bold ">
+                    Let's get<br>
+                    to work</h1>
+                <button class="btn-lg btn btn-outline-light fw-bold fs-5 mb-5 "><a href="#contact">
+                        Contact Us</a></button>
+            </div>
+            <!-- image logo -->
+            <div class="col-sm-1 bg-danger img3"></div>
+
+            <!-- staer footer2 -->
+            <div class="col-sm-8 bg-dark footer2 ">
+                <div class="row">
+                    <div class="col-sm-3 mt-5">
+                        <ul class="ft-link" type="none">
+                            <li><a href="/Best-IT-company-In-Lucknow">About Us</a></li>
+                            <li><a href="/Best-IT-Services-Company-in-Lucknow-PortFolio">Portfolio</a></li>
+                            <li><a href="https://training.ekanatechnologies.com/">Training</a></li>
+                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="/cookie-policy">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 mt-5">
+                        <div class="footer-link">
+                            <ul class="ft-link " type="none">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/Best-Software-Development-Company-in-Lucknow">Services</a></li>
+                                <li><a href="/php-development">Technologies</a></li>
+                                <li><a href="/Best-IT-company-In-Lucknow-contact">Contact Us</a></li>
+                                <li><a href="/Best-IT-Services-Company-in-Lucknow-career">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 mt-5 ">
+                        <ul class="ft-link " type="none">
+                            <li><a href="#">Address
+                                    :</a></li>
+                            <li><a href="#">Ashirwad
+                                    Plaza, 16/278/2, 2nd floor, Sector 16, Indira Nagar, Lucknow, Uttar Pradesh
+                                    206016</a></li>
+                            <br>
+                            <li class="m-1">FOLLOW US</li>
+                            <li class=""><img src="facebook5.png" height="30px" width="30px" ; />
+                                <img src="youtube1.webp" height="40px" width="40px" ; />
+                                <img src="instagram3.webp" height="30px" width="30px" ; />
+                                <img src="github.png" height="30px" width="30px" ; />
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="mb-3">Copyright © 2023 Ekana Technologies . All Rights Reserved.</div>
+
+                </div>
+            </div>
+            <!-- end footer2 -->
+
+        </div>
+    </div>
+    <!-- end footer 1 -->
+
+
+
+</body>
+
+</html>
